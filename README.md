@@ -1,3 +1,6 @@
-# 実行前に
-npm install
-npm run dev
+# 2024 技育キャンプ vol.5 フロントエンドリポジトリ
+
+## clone してからやること
+# npm install
+# npm run dev
+# localhostにアクセス
