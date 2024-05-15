@@ -3,7 +3,7 @@
 function Header() {
     return (
         <div>
-            <h1>これはヘッダー</h1>
+            <h1 className="bg-[#f9a8d4]">これはヘッダー</h1>
         </div>
     )
 }
