@@ -1,12 +1,13 @@
-import Footer from '/src/component/Footer'
-import Header from '/src/component/Header'
+import Footer from './component/Footer'
+import GroupMain from './component/GroupMain'
+import Header from './component/Header'
 
 function Group() { // グループ画面
 
     return (
         <div>
             <Header />
-            <h1>これはグループ</h1>
+            <GroupMain />
             <Footer />
         </div>
     )

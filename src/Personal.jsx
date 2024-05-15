@@ -1,12 +1,14 @@
-import Footer from '/src/component/Footer'
-import Header from '/src/component/Header'
+import Footer from './component/Footer'
+import Header from './component/Header'
+import PersonalMain from './component/PersonalMain'
+
 
 function Personal() { // 個人画面
 
     return (
         <div>
             <Header />
-            <h1>これは個人</h1>
+            <PersonalMain />
             <Footer />
         </div>
     )
