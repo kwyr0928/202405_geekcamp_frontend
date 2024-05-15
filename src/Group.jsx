@@ -1,9 +1,10 @@
+// グループ画面
+
 import Footer from './component/Footer'
 import GroupMain from './component/GroupMain'
 import Header from './component/Header'
 
-function Group() { // グループ画面
-
+function Group() {
     return (
         <div>
             <Header />

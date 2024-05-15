@@ -1,4 +1,4 @@
-// このファイルは基本的にいじらない
+// 変更しない
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';

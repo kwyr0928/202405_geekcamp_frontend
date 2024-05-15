@@ -1,9 +1,10 @@
+// トップ画面
+
 import Footer from './component/Footer'
 import Header from './component/Header'
 import TopMain from './component/TopMain'
 
-function Top() { // トップ画面
-
+function Top() {
   return (
     <div>
       <Header />
