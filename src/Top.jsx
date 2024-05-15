@@ -1,12 +1,13 @@
-import Footer from '/src/component/Footer'
-import Header from '/src/component/Header'
+import Footer from './component/Footer'
+import Header from './component/Header'
+import TopMain from './component/TopMain'
 
 function Top() { // トップ画面
 
   return (
     <div>
       <Header />
-      <h1>これはトップ画面</h1>
+      <TopMain />
       <Footer />
     </div>
   )
