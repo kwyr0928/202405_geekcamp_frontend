@@ -1,4 +1,6 @@
-function Header() { // ヘッダー
+// ヘッダー
+
+function Header() {
     return (
         <div>
             <h1>これはヘッダー</h1>

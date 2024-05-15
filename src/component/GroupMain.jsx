@@ -1,7 +1,8 @@
+// グループ画面 main
+
 import GoalList from "./GoalList"
 
-function GroupMain() { // グループ画面
-
+function GroupMain() {
   return (
     <div>
       <GoalList />

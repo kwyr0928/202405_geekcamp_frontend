@@ -1,7 +1,8 @@
+// 個人画面 main
+
 import GoalList from "./GoalList"
 
-function PersonalMain() { // 個人画面
-
+function PersonalMain() {
     return (
       <div>
         <GoalList />

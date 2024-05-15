@@ -1,4 +1,6 @@
-function Footer() { // フッター
+// フッター
+
+function Footer() {
     return (
         <div>
             <h1>これはフッター</h1>
