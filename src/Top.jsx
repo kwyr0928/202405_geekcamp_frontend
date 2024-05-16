@@ -8,7 +8,7 @@ function Top() {
   return (
     <div>
       <Header />
-      <Button>うわーーーー</Button>
+      <Button>なおったかも</Button>
       <TopMain />
       <Footer />
     </div>
