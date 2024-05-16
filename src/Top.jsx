@@ -8,7 +8,7 @@ function Top() {
   return (
     <div>
       <Header />
-      <Button>Yamada UI</Button>
+      <Button>うわーーーー</Button>
       <TopMain />
       <Footer />
     </div>
