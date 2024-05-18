@@ -1,12 +1,11 @@
 // グループ画面
-
 import Footer from './component/Footer'
 import GroupMain from './component/GroupMain'
 import Header from './component/Header'
 
 function Group() {
     return (
-        <div>
+        <div className="noto-serif-jp-bold">
             <Header />
             <GroupMain />
             <Footer />

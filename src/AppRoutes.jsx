@@ -1,14 +1,13 @@
-// ルーティングの設定 変更しない
-
+// ルーティングの設定
 import { Route, Routes } from "react-router-dom";
 import Group from "./Group";
-import Personal from "./Personal";
 import Login from "./Login";
+import Personal from "./Personal";
 import Top from "./Top";
 
 export const AppRoutes = () => {
     return (
-        <Routes>
+        <Routes >
             <Route path="/" element={<Login />} />
             {/* グループごとにurlを変更 */}
             <Route path="/:id" element={<Login />} />
