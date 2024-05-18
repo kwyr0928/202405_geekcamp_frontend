@@ -5,8 +5,13 @@ let haikei = "/src/assets/haikei.png";
 function TopMain() {
     return (
       <div className = "flex flex-wrap justify-around items-center min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${haikei})` }}>
-        <Box name = "自分の目標" url = "personal" />
-        <Box name = "みんなの目標" url = "group" />
+        <div className="text-center font-bold text-3xl mt-8">
+          {<span style={{ color: '#258425' }}>"がんばり"BOXから自分の目標を設定して<br />友達の目標を確認、応援しよう！</span>}
+        </div>
+        <div className = "flex flex-wrap justify-around items-center">
+          <Box name = "自分" url = "personal" color ="#6495ed" description = {<span style={{ color: '#3970c8' }}>↑<br />自分の"がんばり"を設定できるよ！</span>} />
+          <Box name = "友達" url = "group" color = "#9370db" description = {<span style={{ color: '#7a6ac0' }}>↑<br />友達の"がんばり"を確認、応援できるよ！</span>}/>
+        </div>
       </div>
     )
   }
