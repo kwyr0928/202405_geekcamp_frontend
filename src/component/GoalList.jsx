@@ -17,7 +17,7 @@ function GoalList() { // 目標リスト
   // }, []);
 
     return (
-      <div>
+<div className="flex flex-wrap justify-center">
         {/* <ul>
           {goals.map((goal) => (
           <li key={goal.goal_id}>

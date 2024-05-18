@@ -1,5 +1,4 @@
 // トップ画面 main
-import React from 'react';
 import Box from "./Box";
 let haikei = "/src/assets/haikei.png";
 

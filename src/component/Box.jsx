@@ -1,6 +1,5 @@
 // トップ画面の箱
 
-import React from 'react';
 import PropTypes from 'prop-types'; // 型定義
 import { Link } from 'react-router-dom'; // ページ遷移用タグ
 let hako = "/src/assets/box_brown.png";
@@ -15,7 +14,7 @@ Box.propTypes = { // props増やしたら型定義しておく
 function Box({ name, url, color, description }) {
   return (
     <div className="m-4 flex flex-col flex-wrap items-center" style={{ position: 'relative' }}>
-      <Link to={`/applink/${url}`} style={{ position: 'relative' }}>
+      <Link to={`/applink/${url}`} style={{ position: 'relative' }} className='inline-box animate-jello-horizontal'>
         <img src={hako} alt={`${name}用の画像`} style={{ width: '430px', height: '300px' }} />
           <div style={{position: 'absolute', top: '64%', left: '48%', transform: 'translate(-50%, -50%)', color: 'white', fontSize: '24px', fontWeight: 'bold' }}>
             <span style={{ color: color }}>　 　　 　{name}の</span>
