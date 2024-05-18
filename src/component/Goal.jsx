@@ -1,7 +1,6 @@
 // 目標カード
 // start_dateとend_dateの型変えて時間計算した方がいいかも
 
-import React from 'react'; 
 import PropTypes from 'prop-types'; // 型定義
 let pic = "/src/assets/bakudan.png";
 
@@ -14,7 +13,7 @@ Goal.propTypes = {  // props増やしたら型定義しておく
 
 function Goal({ name, description, start_date, end_date }) {
   return (
-      <div class="box">
+      <div className="box bg-[#ffffff] w-fit m-10">
         <img src={pic} alt={"爆弾"} style={{ width: '200px', height: '200px' }} />
         <h1>{`名前：${name}`}</h1>
         <h2>{`目標：${description}`}</h2>
