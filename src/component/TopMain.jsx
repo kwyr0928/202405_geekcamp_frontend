@@ -5,7 +5,7 @@ let haikei = "/src/assets/haikei.png";
 function TopMain() {
     return (
       <div className = "flex flex-wrap justify-around items-center min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${haikei})` }}>
-        <div className="text-center font-bold text-6xl mt-8">
+        <div className="text-center font-bold text-5xl mt-8">
           {<span style={{ color: '#258425' }}>"がんばり"BOXから自分の目標を設定して<br />友達の目標を確認、応援しよう！</span>}
         </div>
         <div className = "flex flex-wrap justify-around items-center">
@@ -15,5 +15,5 @@ function TopMain() {
       </div>
     )
   }
-  
+   
   export default TopMain
