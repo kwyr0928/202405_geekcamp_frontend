@@ -16,7 +16,7 @@ function Box({ name, url, color, description }) {
     <div className="m-4 flex flex-col flex-wrap items-center" style={{ position: 'relative' }}>
       <Link to={`/applink/${url}`} style={{ position: 'relative' }} className='inline-box animate-jello-horizontal'>
         <img src={hako} alt={`${name}用の画像`} style={{ width: '830px', height: '550px' }} />
-          <div style={{position: 'absolute', top: '64%', left: '48%', transform: 'translate(-50%, -50%)', color: 'white', fontSize: '45px', fontWeight: 'bold' }}>
+          <div style={{position: 'absolute', top: '63%', left: '48%', transform: 'translate(-50%, -50%)', color: 'white', fontSize: '45px', fontWeight: 'bold' }}>
             <span style={{ color: color }}>　 　　 　{name}の</span>
             <br />
             <span style={{ color: '#8b4513' }}>　　　{'"がんばり"'}</span>
