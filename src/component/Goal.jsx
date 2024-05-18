@@ -1,7 +1,6 @@
 // 目標カード
 // start_dateとend_dateの型変えて時間計算した方がいいかも
 
-import React from 'react'; 
 import PropTypes from 'prop-types'; // 型定義
 import axios from 'axios';
 let haikei = "/src/assets/haikei.png";
