@@ -15,7 +15,7 @@ function Box({ name, url, color, description }) {
   return (
     <div className="m-4 flex flex-col flex-wrap items-center" style={{ position: 'relative' }}>
       <Link to={`/applink/${url}`} style={{ position: 'relative' }} className='inline-box animate-jello-horizontal'>
-        <img src={hako} alt={`${name}用の画像`} style={{ width: '830px', height: '550px' }} />
+        <img src={hako} className="hover:opacity-90" alt={`${name}用の画像`} style={{ width: '830px', height: '550px' }} />
           <div style={{position: 'absolute', top: '63%', left: '48%', transform: 'translate(-50%, -50%)', color: 'white', fontSize: '45px', fontWeight: 'bold' }}>
             <span style={{ color: color }}>　 　　 　{name}の</span>
             <br />
@@ -25,7 +25,7 @@ function Box({ name, url, color, description }) {
           </div>
       </Link>
         <div className="text-center mt-2 font-semibold text-4xl">
-          <span style={{ color: '#056405' }}>{description}</span>
+          <span className='animate-tracking-in-expand' style={{ color: '#056405' }}>{description}</span>
         </div>
     </div>
   )

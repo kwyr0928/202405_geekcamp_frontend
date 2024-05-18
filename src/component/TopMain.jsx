@@ -6,7 +6,7 @@ function TopMain() {
     return (
       <div className = "flex flex-wrap justify-around items-center min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${haikei})` }}>
         <div className="text-center font-bold text-5xl mt-8">
-          {<span style={{ color: '#45a445' }}>"がんばり"BOXから自分の目標を設定して<br />友達の目標を確認、応援しよう！</span>}
+          {<span className="animate-tracking-in-expand" style={{ color: '#258425' }}>"がんばり"BOXから自分の目標を設定して<br />友達の目標を確認、応援しよう！</span>}
         </div>
         <div className = "flex flex-wrap justify-around items-center">
           <Box name = "自分" url = "personal" color ="#6495ed" description = {<span style={{ color: '#4980d8' }}>自分の"がんばり"を設定できるよ！</span>} />

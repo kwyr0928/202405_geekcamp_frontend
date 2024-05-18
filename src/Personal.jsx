@@ -7,7 +7,7 @@ import PersonalMain from './component/PersonalMain'
 
 function Personal() {
     return (
-        <div>
+        <div className="noto-serif-jp-bold">
             <Header />
             <PersonalMain />
             <Footer />
