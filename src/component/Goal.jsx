@@ -32,7 +32,7 @@ function Goal({ name, description, start_date, end_date }) {
 
 
   return (
-    <div className="flex flex-wrap justify-start items-start bg-cover bg-center p-20">
+    <div className="flex flex-wrap justify-start items-start bg-cover bg-center p-10">
       <div className={`bg-white/75 p-7 rounded-lg relative flex justify-center items-center`}>
         <div className="animate-wobble-hor-bottom">
           <img src={pic} className="relative ml-28 mt-2 mb-8 animate-wobble-hor-bottom" alt={"爆弾"} style={{ width: '315px', height: '234px' } } />
