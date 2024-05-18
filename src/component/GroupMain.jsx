@@ -1,10 +1,10 @@
 // グループ画面 main
-
-import GoalList from "./GoalList"
+let haikei = "/src/assets/haikei.png";
+import GoalList from "./GoalList";
 
 function GroupMain() {
   return (
-    <div>
+    <div className="min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${haikei})` }}>
       <GoalList />
     </div>
   )

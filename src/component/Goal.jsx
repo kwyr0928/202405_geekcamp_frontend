@@ -2,7 +2,6 @@
 // start_dateとend_dateの型変えて時間計算した方がいいかも
 
 import PropTypes from 'prop-types'; // 型定義
-import axios from 'axios';
 let haikei = "/src/assets/haikei.png";
 let pic = "/src/assets/bakudan.png";
 
@@ -11,9 +10,12 @@ Goal.propTypes = {  // props増やしたら型定義しておく
   description: PropTypes.string,
   start_date: PropTypes.string,
   end_date: PropTypes.string,
+  opacity: PropTypes.number,
 };
 
-function Goal({ name, description, start_date, end_date }) {
+function Goal({ name, description, start_date, end_date, opacity }) {
+
+  let op = opacity*100;
 
   const handleClick = () => {
     // axios.post('/status', {
