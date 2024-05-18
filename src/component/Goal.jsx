@@ -32,7 +32,7 @@ function Goal({ name, description, start_date, end_date }) {
   return (
     <div className= "flex flex-wrap justify-start items-start min-h-screen bg-cover bg-center p-20">
       <div className="bg-white p-7 rounded-lg relative flex justify-center items-center">
-        <img src={pic} className="ml-28 mt-2 mb-8" alt={"爆弾"} style={{ width: '315px', height: '234px' } } />
+        <img src={pic} className="ml-28 mt-2 mb-8" alt={"爆弾"} style={{ width: '305px', height: '234px' } } />
         <div className="text-left mt-2 text-base absolute bottom-9 left-9">
           <div className="my-10 text-2xl  font-black	">
             <h1>{`名前：${name}`}</h1>
