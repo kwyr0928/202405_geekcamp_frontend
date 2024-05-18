@@ -32,7 +32,12 @@ function Goal({ name, description, start_date, end_date }) {
   return (
     <div className= "flex flex-wrap justify-start items-start min-h-screen bg-cover bg-center p-20">
       <div className="bg-white p-7 rounded-lg relative flex justify-center items-center">
-        <img src={pic} className="ml-28 mt-2 mb-8" alt={"爆弾"} style={{ width: '315px', height: '234px' } } />
+        <div className="animate-wobble-hor-bottom">
+          <img src={pic} className="relative ml-28 mt-2 mb-8 rotate-[17deg] animate-wobble-hor-bottom" alt={"爆弾"} style={{ width: '315px', height: '234px' } } />
+          <div className="absolute bg-white px-5 py-0 right-2 top-[176px] -rotate-[2deg] ">
+            <p className=" text-sm text-center p-2 ">00:00</p>
+          </div>
+        </div>
         <div className="text-left mt-2 text-base absolute bottom-9 left-9">
           <div className="my-10 text-2xl  font-black	">
             <h1>{`名前：${name}`}</h1>
@@ -43,8 +48,9 @@ function Goal({ name, description, start_date, end_date }) {
           <div className="mb-3 text-sm text-center p-2 bg-white md:w-1/2">
             <h3>{`作成日：${start_date}`}</h3>
           </div>
-          <div className="animate-vibrate-1 text-sm text-center p-2 bg-red-500 md:w-1/2 ">
-            <button onClick={handleClick}>達成した！</button>
+          <div class="flex h-12 justify-center gap-x-6 dark:text-white">
+            <a class="group flex h-min items-center disabled:opacity-50 disabled:hover:opacity-50 hover:opacity-95 justify-center ring-none rounded-lg shadow-lg font-semibold py-2 px-4 font-dm focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-red-500 border-b-red-700 disabled:border-0 disabled:bg-red-500 disabled:text-white ring-white text-white border-b-4 hover:border-0 active:border-0 hover:text-gray-100 active:bg-red-800 active:text-gray-300 focus-visible:outline-violet-500 text-sm sm:text-base dark:bg-gray-700 dark:border-gray-700 dark:border-b-gray-900"href="">達成した！
+            </a>
           </div>
         </div>
       </div>
