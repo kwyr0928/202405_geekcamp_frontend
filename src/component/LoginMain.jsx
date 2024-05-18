@@ -36,7 +36,7 @@ function LoginMain() {
 
 
     return (
-        <div className="flex flex-col justify-center min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${haikei})` }}>
+        <div className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${haikei})` }} >
             <ul>
         {/* {logins.map((login) => (
           <li key={login.line_user_id}>
@@ -44,18 +44,22 @@ function LoginMain() {
           </li>
         ))} */}
       </ul>
+      
+      <div className="text-center font-bold text-5xl mt-8 mb-16">
+          {<span className="animate-tracking-in-expand" style={{ color: '#258425' }}>appnameにログインしよう！</span>}
+        </div>
 
-        <Autocomplete focusBorderColor="green.700" placeholder="自分の名前を選択" emptyMessage="名前が存在しません" size="lg" onChange={(value) => handleLogin(value)}>
+        <Autocomplete focusBorderColor="green.700" placeholder="自分の名前を選択" emptyMessage="名前が存在しません" size="lg" onChange={(value) => handleLogin(value)} className="mb-4 bg-white w-full max-w-md" style={{ width: '400px' }}>
         <AutocompleteOption value="しおん">しおん</AutocompleteOption>
         <AutocompleteOption value="ゆり">ゆり</AutocompleteOption>
         <AutocompleteOption value="まお">まお</AutocompleteOption>
-        <AutocompleteOption value="あさい">あさい家に帰ってください</AutocompleteOption>
+        <AutocompleteOption value="あさい">あさい早くしてください</AutocompleteOption>
         <AutocompleteOption value="ゆーき">ゆーき</AutocompleteOption>
         </Autocomplete>
 
-            <div className="container">
+            <div className="container text-center">
                 <Link to={{ pathname: "/applink/top", state: { userId: userId } }} style={{ textDecoration: 'none' }}>
-                <Button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <Button>
                     Login
                 </Button>
                 </Link>
