@@ -1,5 +1,4 @@
-// ルーティングの設定 変更しない
-
+// ルーティングの設定
 import { Route, Routes } from "react-router-dom";
 import Group from "./Group";
 import Login from "./Login";

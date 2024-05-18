@@ -1,8 +1,7 @@
 // ログイン画面
-
 import LoginMain from './component/LoginMain'
 
-function Login() {  
+function Login() {
     return (
         <div>
             <LoginMain />
