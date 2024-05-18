@@ -6,7 +6,7 @@ import Header from './component/Header'
 
 function Group() {
     return (
-        <div>
+        <div  className="noto-serif-jp-bold">
             <Header />
             <GroupMain />
             <Footer />

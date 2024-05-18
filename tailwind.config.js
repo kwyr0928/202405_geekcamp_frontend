@@ -6,11 +6,42 @@ export default {
   theme: {
     extend: {
       animation: {
+        "tracking-in-expand": "tracking-in-expand 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000)   both",
+        "vibrate-1": "vibrate-1 0.3s linear  infinite both",
         "text-shadow-drop-center": "text-shadow-drop-center 0.6s ease   both",
         "jello-horizontal": "jello-horizontal 0.8s ease   both",
         
       },
       keyframes: {
+        "tracking-in-expand": {
+          "0%": {
+              "letter-spacing": "-.5em",
+              opacity: "0"
+          },
+          "40%": {
+              opacity: ".6"
+          },
+          to: {
+              opacity: "1"
+          }
+      },
+        "vibrate-1": {
+          "0%,to": {
+              transform: "translate(0)"
+          },
+          "20%": {
+              transform: "translate(-2px, 2px)"
+          },
+          "40%": {
+              transform: "translate(-2px, -2px)"
+          },
+          "60%": {
+              transform: "translate(2px, 2px)"
+          },
+          "80%": {
+              transform: "translate(2px, -2px)"
+          }
+      },
         "text-shadow-drop-center": {
           "0%": {
               "text-shadow": "0 0 0 transparent"
@@ -40,7 +71,6 @@ export default {
           },
         },
       },
-      
     },
   },
   plugins: [],

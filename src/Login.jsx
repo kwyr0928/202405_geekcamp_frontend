@@ -2,12 +2,10 @@
 
 import Footer from './component/Footer'
 import LoginMain from './component/LoginMain'
-import Header from './component/Header'
 
 function Login() {  
     return (
         <div>
-            <Header />
             <LoginMain />
             <Footer />
         </div>

@@ -2,7 +2,6 @@
 // start_dateとend_dateの型変えて時間計算した方がいいかも
 
 import PropTypes from 'prop-types'; // 型定義
-import axios from 'axios';
 let haikei = "/src/assets/haikei.png";
 let pic = "/src/assets/bakudan.png";
 
@@ -11,9 +10,12 @@ Goal.propTypes = {  // props増やしたら型定義しておく
   description: PropTypes.string,
   start_date: PropTypes.string,
   end_date: PropTypes.string,
+  opacity: PropTypes.number,
 };
 
-function Goal({ name, description, start_date, end_date }) {
+function Goal({ name, description, start_date, end_date, opacity }) {
+
+  let op = opacity*100;
 
   const handleClick = () => {
     // axios.post('/status', {
@@ -30,9 +32,9 @@ function Goal({ name, description, start_date, end_date }) {
 
 
   return (
-    <div className= "flex flex-wrap justify-start items-start min-h-screen bg-cover bg-center p-20">
-      <div className="bg-white p-7 rounded-lg relative flex justify-center items-center">
-        <img src={pic} className="ml-28 mt-2 mb-8" alt={"爆弾"} style={{ width: '315px', height: '234px' } } />
+    <div className= "flex flex-wrap justify-start bg-cover bg-center p-10">
+      <div className={`bg-white/${op} p-7 rounded-lg relative flex justify-center items-center"`}>
+        <img src={pic} className="ml-28 mt-5 mb-8 animate-vibrate-1" alt={"爆弾"} style={{ width: '315px', height: '234px' } } />
         <div className="text-left mt-2 text-base absolute bottom-9 left-9">
           <div className="my-10 text-2xl  font-black	">
             <h1>{`名前：${name}`}</h1>
