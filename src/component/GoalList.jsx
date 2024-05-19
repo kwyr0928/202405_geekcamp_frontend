@@ -1,4 +1,5 @@
-// import { useState } from 'react';
+// import axios from 'axios';
+// import { useEffect, useState } from 'react';
 import Goal from "./Goal";
 
 function GoalList() { // 目標リスト
@@ -18,21 +19,21 @@ function GoalList() { // 目標リスト
   return (
     <div>
       <div className={`flex flex-wrap justify-center pt-20 pb-20`}>
-        {/* <ul>
-          {goals.map((goal) => (
+        <ul>
+          {/* {goals.map((goal) => (
           <li key={goal.goal_id}>
-          <Goal name = {goal.name} description = {goal.description} start_date = {goal.start_date} end_date = {goal.end_date} />
+          <Goal name = {goal.name} description = {goal.description} start_date = {goal.start_date} deadline_date = {goal.deadline_date} />
           </li>
-        ))}
-      </ul> */}
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
+        ))} */}
+      </ul>
+        <Goal name="ゆり" description="課題を終わらせる" start_date="2024-08-31" deadline_date="2024-08-31" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="2024-08-31" deadline_date="2024-08-31" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="2024-08-31" deadline_date="2024-08-31" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="2024-08-31" deadline_date="2024-08-31" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="2024-08-31" deadline_date="2024-08-31" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="2024-08-31" deadline_date="2024-08-31" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="2024-08-31" deadline_date="2024-08-31" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="2024-08-31" deadline_date="2024-08-31" />
       </div>
     </div>
   )
