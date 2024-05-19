@@ -10,7 +10,7 @@ function PersonalMain() {
 
   useEffect(() => {
     const fetchUserId = async () => {
-      const user_id = "Ub2aef8986975500e8ee10a67f6ec3b37";
+      const user_id = "Ud5c6b640cf359dd00d701c0e8da0600b";
       setUserId(user_id);
     };
 
@@ -46,7 +46,7 @@ function PersonalMain() {
             name={goal.name}
             description={goal.description}
             start_date={goal.start_date}
-            end_date={goal.end_date}
+            deadline_date={goal.deadline_date}
           />
         </div>
       ))}
