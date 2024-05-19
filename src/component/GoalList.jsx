@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import Goal from "./Goal";
 import axios from "axios";
+import { useEffect, useState } from "react";
+import Goal from "./Goal";
 
 function GoalList() {
   // 目標リスト
@@ -37,18 +37,18 @@ function GoalList() {
               name={goal.name}
               description={goal.description}
               start_date={goal.start_date}
-              end_date={goal.end_date}
+              deadline_date={goal.deadline_date}
             />
           </div>
         ))}
-        {/* /* <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" end_date="2" /> */}
+        {/* <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" /> */}
       </div>
     </div>
   );
