@@ -30,6 +30,7 @@ function GoalList() {
   return (
     <div>
       <div className={`flex flex-wrap justify-center pt-20 pb-20`}>
+
         {goals.map((goal) => (
           <div key={goal.goal_id}>
             <Goal
