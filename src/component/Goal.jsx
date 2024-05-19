@@ -2,7 +2,7 @@
 // start_dateとend_dateの型変えて時間計算した方がいいかも
 
 import PropTypes from 'prop-types'; // 型定義
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 let pic = "/src/assets/bakudan.png";
 
 Goal.propTypes = {  // props増やしたら型定義しておく
@@ -16,6 +16,15 @@ Goal.propTypes = {  // props増やしたら型定義しておく
 function Goal({ name, description, start_date, deadline_date }) {
 const [color, setColor] = useState("bg-red-500 border-b-red-700 disabled:border-0 disabled:bg-red-500  active:bg-red-800");
 const [message, setMessage] = useState("応援する！");
+
+useEffect(() => {
+ if(name === "ゆりたん"){
+setMessage("達成した！")
+setColor("bg-purple-500 border-b-purple-700 disabled:border-0 disabled:bg-purple-500  active:bg-purple-800")
+ }else{
+setMessage("応援する！")
+ }
+}, []);
 
   const handleClear = () => {
     console.log("目標削除しちゃうよーーん！");
@@ -33,8 +42,14 @@ const [message, setMessage] = useState("応援する！");
 
   const handleClick = () => {
     console.log("達成したよーーん！→エラーなるからとりあえず変数使っとく" + deadline_date);
-    setColor("bg-yellow-500 border-b-yellow-700 disabled:border-0 disabled:bg-yellow-500  active:bg-yellow-800")
-    setMessage("応援済み")
+    
+    if(name === "ゆりたん"){
+      setMessage("達成済！えらいね")
+      setColor("bg-yellow-500 border-b-yellow-700 disabled:border-0 disabled:bg-yellow-500  active:bg-yellow-800")
+       }else{
+      setMessage("応援済！がんばろう")
+      setColor("bg-yellow-500 border-b-yellow-700 disabled:border-0 disabled:bg-yellow-500  active:bg-yellow-800")
+       }
 
     // axios.post('/status', {
     //   name: name,

@@ -41,14 +41,14 @@ function GoalList() {
             />
           </div>
         ))}
-        {/* <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
+        <Goal name="ゆりたん" description="課題を終わらせる" start_date="1" deadline_date="2" />
+        <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
+        <Goal name="ゆりたん" description="課題を終わらせる" start_date="1" deadline_date="2" />
         <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
         <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
         <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
         <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
         <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" />
-        <Goal name="ゆり" description="課題を終わらせる" start_date="1" deadline_date="2" /> */}
       </div>
     </div>
   );
