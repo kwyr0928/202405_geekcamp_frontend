@@ -45,7 +45,7 @@ function LoginMain() {
       </ul>
       
       <div className="text-center font-bold text-5xl mt-8 mb-16">
-          {<span className="animate-tracking-in-expand" style={{ color: '#258425' }}>&quot;がんばりBox&quot;にログインしよう！</span>}
+          {<span className="animate-tracking-in-expand" style={{ color: '#258425' }}>&quot;がんばり&quot;BOXにログインしよう！</span>}
         </div>
 
 
